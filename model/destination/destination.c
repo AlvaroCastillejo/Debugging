@@ -188,8 +188,7 @@ char * readString(FILE * file) {
 
 	resize(&ret, i + 1);
 
-    ret[i] = '\0';
-
+	ret[i] = '\0';
 	return ret;
 }
 
