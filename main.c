@@ -21,11 +21,6 @@ int main() {
 
 	readWholeFile(f, &l);
 
-//	goStart(&l, 1);
-//	for(int i = 0; i < 10; i++){
-//	    goNextTimes(&l, 1, 1);
-//	}
-
 	printWelcomeLine();
 
 	do {
@@ -43,6 +38,7 @@ int main() {
 	} while (!isExit(option));
 
 	destroy(&l);
+	fclose(f);
 
 	return 0;
 }
