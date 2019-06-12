@@ -1,6 +1,7 @@
 #include "list.h"
 #include <stdlib.h>
 #include <memory.h>
+#include <mem.h>
 
 
 List create() {
@@ -49,6 +50,7 @@ void insert(List * l, Destination d) {
 			l->poi[i] = l->poi[i]->next[i];
 
 			if (l->poi[i] = l->last) {
+
 				break;
 			}
 

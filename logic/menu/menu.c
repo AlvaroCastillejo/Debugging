@@ -7,6 +7,7 @@
 #define LAST_OPTION 4
 
 void printWelcomeLine() {
+    setbuf(stdout, 0);
 	printf("\n\t---===  Welcome to TripOrganizer  ===---\n");
 }
 

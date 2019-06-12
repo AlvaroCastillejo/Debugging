@@ -21,6 +21,10 @@ int main() {
 
 	readWholeFile(f, &l);
 
+//	goStart(&l, 1);
+//	for(int i = 0; i < 10; i++){
+//	    goNextTimes(&l, 1, 1);
+//	}
 
 	printWelcomeLine();
 
