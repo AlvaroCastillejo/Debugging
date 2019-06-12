@@ -3,6 +3,12 @@
 #include <memory.h>
 #include <mem.h>
 
+#define BY_NAME 0
+#define BY_AVG_PRICE 1
+#define BY_DISTANCE 2
+#define BY_TIME 3
+
+
 
 List create() {
 	List l;
@@ -49,7 +55,7 @@ void insert(List * l, Destination d) {
 			//Avancem al següent element i mirem si aquest encara l'hem de saltar
 			l->poi[i] = l->poi[i]->next[i];
 
-			if (l->poi[i] = l->last) {
+			if (l->poi[i] == l->last) {
 
 				break;
 			}
